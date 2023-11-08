@@ -119,6 +119,9 @@ export const FALLBACK_URLS = {
     'https://1rpc.io/base',
     'https://base.meowrpc.com',
   ],
+  [ChainId.GANACHE]: [
+    'HTTP://127.0.0.1:7545'
+  ],
 }
 
 /**
@@ -156,4 +159,5 @@ export const RPC_URLS = {
   [ChainId.BNB]: [QUICKNODE_BNB_RPC_URL, ...FALLBACK_URLS[ChainId.BNB]],
   [ChainId.AVALANCHE]: [`https://avalanche-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.AVALANCHE]],
   [ChainId.BASE]: [`https://base-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.BASE]],
+  [ChainId.GANACHE] : [`HTTP://127.0.0.1:7545`]
 }
